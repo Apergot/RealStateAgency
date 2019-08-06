@@ -186,6 +186,11 @@ navbar a:last-of-type{
     display: inline-block;
     margin-top: 3rem;
     text-align: center;
+    border: none;
+}
+
+.boton:hover{
+    cursor: pointer;
 }
 
 .boton-amarillo{
@@ -337,13 +342,24 @@ navbar a:last-of-type{
 }
 
 /*contacto*/
+form p{
+    font-size: 1.2rem;
+    color: #4f4f4f;
+}
+
+legend{
+    font-size: 2rem;
+    color:#4f4f4f;
+}
 
 label{
+    font-weight: 700;
+    text-transform: uppercase;
     display: block;
     max-width: 80rem;
 }
 
-input:not([type="submit"]), textarea{
+input:not([type="submit"]), textarea, select{
     padding: 1rem;
     display: block;
     width: 100%;
@@ -353,10 +369,26 @@ input:not([type="submit"]), textarea{
     border-radius: .5rem;
 }
 
-textarea{
-    background-color: #e1e1e1;
+select{
+    -webkit-appearance: none;
+    appearance: none;
 }
 
+input[type="radio"]{
+    width: auto;
+    margin: 0;
+}
+
+textarea{
+    height: 20rem;
+}
+
+.forma-contacto{
+    width: 40rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
 
 /*
 -vh: view port height, básicamente para cubir la altura de la pantalla.
