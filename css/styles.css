@@ -150,26 +150,26 @@ h4{
 
 /*Anuncios*/
 
-.contenedor-anuncios-solo{
+.contenedor-anuncios{
     display: flex;
     justify-content: space-between; 
     flex-wrap: wrap; 
 }
 
 @media(min-width: 768px) {
-    .contenedor-anuncios-solo{
+    .contenedor-anuncios{
         display:grid;
         grid-template-columns: repeat(3, 1fr);
     }
 }
-
+/*
 @media(min-width: 768px) {
     .contenedor-anuncios{
         display: flex;
         justify-content: space-between; 
         flex-wrap: wrap;   
     }
-}
+}*/
 
 .anuncio{
     border-style: solid;
